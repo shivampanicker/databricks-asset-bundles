@@ -1,5 +1,6 @@
 !#bin/bash
 
+#comment
 databricks bundle validate --profile DEFAULT
 
 databricks bundle deploy -t development --profile DEFAULT
