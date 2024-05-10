@@ -6,8 +6,8 @@ resources:
   pipelines:
     dlt-streaming-sp-edg-demo-pipeline:
       name: dlt-streaming-sp-edg-demo-pipeline
-      development: true
-      continuous: false
+      development: false
+      continuous: true
       channel: "CURRENT"
       photon: false
       target: endeavour_demo
@@ -25,7 +25,7 @@ resources:
           num_workers: 1
 
 targets:
-  development:
+  production:
     workspace:
-      host: https://e2-demo-tokyo.cloud.databricks.com/
+      host: https://e2-demo-field-eng.cloud.databricks.com/
 
